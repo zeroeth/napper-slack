@@ -13,6 +13,9 @@ module.exports = (robot) ->
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
+  robot.hear /(roo/rao)/i, (res) ->
+    res.send "RAOOOOOOOOOO"
+    
   robot.hear /sleepy/i, (res) ->
 	  res.send "ZzZzzzzz..."
 
