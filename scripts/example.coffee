@@ -25,7 +25,7 @@ module.exports = (robot) ->
   robot.hear /(pf+t+|fart(s|y)*)/i, (res) ->
 	  res.send ":cat2::dash:"
   
-  robot.hear /tantacles*/i, (res) ->
+  robot.hear /tentacles*/i, (res) ->
 	  res.send ":octopus::sweat_drops::sweat_drops::sweat_drops:"
   
   faces = ['(ΦωΦ）', '(^・ω・^ )', '=^･ω･^=', '｡＾･ｪ･＾｡', '(*ΦωΦ*)', '(^._.^)ﾉ', '(=｀ω´=)', '(=^･^=)', 'o(^・x・^)o', 'ミ๏ｖ๏彡', '(,,◕ ⋏ ◕,,)']
