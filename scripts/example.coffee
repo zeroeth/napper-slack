@@ -13,14 +13,23 @@ module.exports = (robot) ->
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
-  robot.hear /(roo|rao)/i, (res) ->
+  robot.hear /ra*o+/i, (res) ->
     res.send "RAOOOOOOOOOO"
-    
+  
   robot.hear /sleepy/i, (res) ->
 	  res.send "ZzZzzzzz..."
-
+    
+  robot.hear /po+py*/i, (res) ->
+	  res.send ":hankey:"
+    
+  robot.hear /(pf+t+|fart(s|y)*)/i, (res) ->
+	  res.send ":cat2::dash:"
+  
+  robot.hear /tantacles*/i, (res) ->
+	  res.send ":octopus::sweat_drops::sweat_drops::sweat_drops:"
+  
   faces = ['(ΦωΦ）', '(^・ω・^ )', '=^･ω･^=', '｡＾･ｪ･＾｡', '(*ΦωΦ*)', '(^._.^)ﾉ', '(=｀ω´=)', '(=^･^=)', 'o(^・x・^)o', 'ミ๏ｖ๏彡', '(,,◕ ⋏ ◕,,)']
-  robot.hear /meow/i, (res) ->
+  robot.hear /(meow|nyo)/i, (res) ->
 	  res.send res.random faces
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
